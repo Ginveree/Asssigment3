@@ -493,7 +493,7 @@ public class Tickets extends JFrame {
 						totalPrice = pricePTT * (1 - m) * q;
 					}
 					else {//no membership
-						totalPrice = pricePTT;
+						totalPrice = pricePTT * q;
 					}
 					//2 decimal points
 					totalPriceF = String.format("%.2f", totalPrice);
@@ -507,7 +507,7 @@ public class Tickets extends JFrame {
 						totalPrice = priceS * (1 - m) * q;
 					}
 					else {//no memberhip
-						totalPrice = priceS;
+						totalPrice = priceS * q;
 					}
 					//2 decimal points
 					totalPriceF = String.format("%.2f", totalPrice);
@@ -521,7 +521,7 @@ public class Tickets extends JFrame {
 						totalPrice = priceKR * (1 - m) * q;
 					}
 					else {//no membership
-						totalPrice = priceKR;
+						totalPrice = priceKR * q;
 					}
 					//2 decimal points
 					totalPriceF = String.format("%.2f", totalPrice);
